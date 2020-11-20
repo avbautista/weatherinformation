@@ -24,6 +24,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.homecredit.weather.model.WeatherLog;
 
+/* Used JPA notation for getting last 5 latest inserted log */
+
 public interface WeatherLogRepository extends JpaRepository<WeatherLog, Long>{
 	
 	public List<WeatherLog> findTop5ByOrderByDtimeInsertedDesc();
