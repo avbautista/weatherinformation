@@ -38,6 +38,10 @@ public class GetWeatherResponseDto extends GenericResponseDto {
 	private String actualWeather;
 	private String temperature;
 	
+	public GetWeatherResponseDto(){
+		super();  
+	}
+	
 	public GetWeatherResponseDto(Integer code, String message){
 		super(code, message);  
 	}

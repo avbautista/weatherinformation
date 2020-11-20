@@ -34,6 +34,10 @@ public class GetLatestWeatherLogResponseDto extends GenericResponseDto {
 
 	private List<WeatherLogDto> weatherList;
 	
+	public GetLatestWeatherLogResponseDto() {
+		super();
+	}
+	
 	public GetLatestWeatherLogResponseDto(Integer code, String message,
 			List<WeatherLogDto> weatherList) {
 		super(code, message);
